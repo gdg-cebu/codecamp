@@ -24,7 +24,9 @@ body {
 .wrapper {
   width: 80vw;
   max-width: 100rem;
-  padding: 1.25em 0;
+  padding-bottom: 3.15em;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
   margin: 0 auto;
 }
 
@@ -74,18 +76,14 @@ body {
 .venue-map {
   display: block;
   width: calc(100% + 20vw);
-  height: 75vmin;
+  height: 100vmin;
   margin: 3.15em -10vw 0 -10vw;
   object-fit: cover;
   object-position: center center;
 }
 
 
-@media all and (min-width: 1250px) {
-  #about .wrapper {
-    padding-bottom: 1.25em;
-  }
-
+@media all and (min-width: 1250px), (min-device-width: 1250px) {
   .venue-map {
     width: 100%;
     height: auto;
@@ -97,18 +95,12 @@ body {
 
 /** Speakers Section **/
 
-.speakers {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-
 .speaker {
-  flex-shrink: 0;
-  width: calc((100% - 12rem) / 3);
-  margin: 2rem;
+  margin: 2rem 0;
   text-align: center;
   background-color: #eee;
+  border-radius: 5px;
+  overflow: hidden;
 }
 
 
@@ -118,34 +110,42 @@ body {
 
 
 .speaker-details {
-  padding: 2.4rem 1rem;
+  padding: 1em;
 }
 
 
 .speaker-name {
   margin: 0;
+  font-size: 1em;
 }
 
 
 .speaker-company {
   margin: 0;
-  font-size: 1.6rem;
+  font-size: 1em;
   font-weight: normal;
-  color: #777;
+  opacity: 0.5;
 }
 
 
-.social-links {
-  margin-top: 2rem;
+@media all and (min-width: 500px), (min-device-width: 500px) {
+  .speakers {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+
+  .speaker {
+    width: calc((100% - 4rem) / 2);
+    margin: 1rem;
+  }
 }
 
 
-.social-link {
-  display: inline-block;
-  width: 2.6rem;
-  height: 2.6rem;
-  border: 1px solid #aaa;
-  border-radius: 50%;
+@media all and (min-width: 800px), (min-device-width: 800px) {
+  .speaker {
+    width: calc((100% - 6rem) / 3);
+  }
 }
 
 
