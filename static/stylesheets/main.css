@@ -220,7 +220,7 @@ body {
   .event::after {
     content: "";
     width: 2px;
-    height: 50%;
+    height: calc(50% + 2.5rem);
     position: absolute;
     left: calc(15rem - 1px);
     background-color: #ddd;
@@ -228,6 +228,15 @@ body {
 
   .event::before {
     bottom: calc(50% + 0.5rem);
+  }
+
+  .event::after {
+    top: calc(50% + 0.5rem);
+  }
+
+  .event:first-child::before,
+  .event:last-child::after {
+    display: none;
   }
 
 
@@ -270,6 +279,11 @@ body {
 
 
 @media all and (min-width: 800px), (min-device-width: 800px) {
+  .event::before,
+  .event::after {
+    left: calc(16.5rem - 1px);
+  }
+
   .event-time {
     margin: 0 4rem;
   }
