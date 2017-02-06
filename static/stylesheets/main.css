@@ -152,43 +152,134 @@ body {
 
 /** Schedule Section **/
 
-.schedule {
-  display: flex;
-  align-items: center;
-  position: relative;
+.event {
+  margin: 5rem 0;
 }
 
 
-.schedule-event {
-  order: 1;
-  margin-left: 16rem;
+.event-speaker {
+  flex-shrink: 0;
+  display: none;
+  width: 10rem;
+  text-align: center;
 }
 
 
-.schedule-event-time {
+/** hack to make the speaker avatar appear vertically centered **/
+.event-speaker::before {
+  content: attr(data-speaker);
+  display: block;
+  margin: 0.5em 0;
+  font-size: 1.4rem;
+  font-weight: bold;
+  opacity: 0;
+}
+
+
+.event-speaker-avatar {
+  width: 100%;
+  border-radius: 50%;
+}
+
+
+.event-speaker-name {
+  margin: 0.5em 0;
+  font-size: 1.4rem;
+}
+
+
+.event-time {
+  display: block;
   width: 5rem;
   height: 5rem;
-  position: absolute;
-  top: calc(50% - 2.5rem);
-  left: 23.5rem;
+  margin: 0 auto 1.6rem auto;
+  font-size: 0.9em;
   text-align: center;
   line-height: 5rem;
-  background-color: #eee;
+  background-color: #ddd;
   border-radius: 50%;
 }
 
 
-.schedule-speaker {
-  flex-shrink: 0;
-  width: 18rem;
+.event-title {
+  margin: 0;
+  margin-bottom: 0.5em;
   text-align: center;
-  margin-top: 3.17em;
 }
 
 
-.schedule-speaker-avatar {
-  display: block;
-  width: 100%;
-  margin: auto;
-  border-radius: 50%;
+@media all and (min-width: 500px), (min-device-width: 500px) {
+  .event {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+
+
+  .event::before,
+  .event::after {
+    content: "";
+    width: 2px;
+    height: 50%;
+    position: absolute;
+    left: calc(15rem - 1px);
+    background-color: #ddd;
+  }
+
+  .event::before {
+    bottom: calc(50% + 0.5rem);
+  }
+
+
+  .event-speaker {
+    display: block;
+  }
+
+
+  .event-time {
+    flex-shrink: 0;
+    margin: 0 2.5rem;
+    position: relative;
+  }
+
+
+  .event-time::before,
+  .event-time::after {
+    content: "";
+    width: 2.5rem;
+    height: 2px;
+    position: absolute;
+    top: calc(50% - 1px);
+    background-color: #ddd;
+  }
+
+  .event-time::before {
+    right: 100%;
+  }
+
+  .event-time::after {
+    width: 1.5rem;
+    left: 100%;
+  }
+
+
+  .event-title {
+    text-align: left;
+  }
+}
+
+
+@media all and (min-width: 800px), (min-device-width: 800px) {
+  .event-time {
+    margin: 0 4rem;
+  }
+
+
+  .event-time::before {
+    width: 4rem;
+  }
+
+  .event-time::after {
+    width: 3rem;
+  }
 }
