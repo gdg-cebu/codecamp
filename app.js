@@ -16,12 +16,14 @@ app.use(morgan('dev'));
 app.use(favicon(path.join(__dirname, 'static', 'images', 'favicon.ico')));
 app.use('/static', express.static(path.join(__dirname, 'static')));
 
-app.get('/', async (req, res) => {
-  const context = {
-    eventMapUrl: getStaticMapUrl(),
-    speakers: await getSpeakers()
-  };
-  res.render('index.html', context);
+app.get('/', (req, res) => {
+  getSpeakers().then(speakers => {
+    const context = {
+      eventMapUrl: getStaticMapUrl(),
+      speakers: speakers
+    };
+    res.render('index.html', context);
+  });
 });
 
 
