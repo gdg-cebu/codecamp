@@ -4,7 +4,7 @@
   "description": "gdg cebu code camp 2017",
   "main": "app.js",
   "scripts": {
-    "start": "./node_modules/.bin/nodemon bin/www"
+    "start": "./node_modules/.bin/nodemon --harmony bin/www"
   },
   "repository": "git@github.com:gdg-cebu/codecamp.git",
   "author": "Arnelle Balane <arnellebalane@gmail.com>",

@@ -1,4 +1,4 @@
-#!/usr/bin/env node
+#!/usr/bin/env node --harmony
 const winston = require('winston');
 const config = require('../config');
 const app = require('../app');
