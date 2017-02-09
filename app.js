@@ -1,3 +1,4 @@
+const fs = require('fs');
 const path = require('path');
 const express = require('express');
 const consolidate = require('consolidate');
@@ -15,9 +16,10 @@ app.use(morgan('dev'));
 app.use(favicon(path.join(__dirname, 'static', 'images', 'favicon.ico')));
 app.use('/static', express.static(path.join(__dirname, 'static')));
 
-app.get('/', (req, res) => {
+app.get('/', async (req, res) => {
   const context = {
-    eventMapUrl: getStaticMapUrl()
+    eventMapUrl: getStaticMapUrl(),
+    speakers: await getSpeakers()
   };
   res.render('index.html', context);
 });
@@ -37,6 +39,19 @@ function getStaticMapUrl() {
     return qs;
   }, []).join('&');
   return `${baseUrl}?${querystring}`;
+}
+
+
+function getSpeakers() {
+  return new Promise((resolve, reject) => {
+    const speakersPath = path.join(__dirname, 'data', 'speakers.json');
+    fs.readFile(speakersPath, 'utf8', (err, body) => {
+      if (err) {
+        return reject(err);
+      }
+      resolve(JSON.parse(body));
+    })
+  });
 }
 
 

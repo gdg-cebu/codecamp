@@ -1,0 +1,57 @@
+[
+  {
+    "name": "Soonson Kwon",
+    "position": "Developer Relation Ecosystem Lead",
+    "company": "Google",
+    "bio": "Head of DevRel APAC Ecosystem and Korea Regional Lead working on building strong ecosystem for developers. Twenty (20) years ago at 1996, he founded KLDP, Korea's largest/oldest open source community.",
+    "image": "/static/images/speakers/soonson-kwon.png"
+  },
+
+  {
+    "name": "Takuo Suzuki",
+    "position": "Developer Relations Program Manager",
+    "company": "Google",
+    "bio": "Takuo is the lead of the Developer Relations team in Japan, Taiwan and ANZ. He has a keen focus on Android's Material Design. He further engages in UX reviews of apps and further facilitates various design sprints.",
+    "image": "/static/images/speakers/takuo-suzuki.png"
+  },
+
+  {
+    "name": "Manikanta Krishnamurthy",
+    "position": "Developer Relations Community Manager",
+    "company": "Google",
+    "bio": "Mani comes with a strong background of Mobile Development in Apps & games, across a broad range of mobile platforms starting from the earliest Symbian phones. Mani joined Google Developer Relations team roughly a year back to strengthen the local Tech Ecosystem in Singapore.",
+    "image": "/static/images/speakers/manikanta-krishnamurthy.png"
+  },
+
+  {
+    "name": "Junho Choi",
+    "position": "",
+    "company": "Google",
+    "bio": "Chief Architect/Co-founder of Neumob at Sunnyvale, CA. Worked on developing, deploying and performance optimization of mobile app acceleration, application/web acceleration and content delivery network more than 15 years. Previous committer (ports) of FreeBSD project and maintainer of kr.freebsd.org local mirror and user community. Twitter @junhochoi, E-mail: junho.choi@gmail.com",
+    "image": "/static/images/speakers/junho-choi.png"
+  },
+
+  {
+    "name": "Sami Kizilbash",
+    "position": "Developer Relations Program Manager",
+    "company": "Google",
+    "bio": "Sami oversees Google’s Developer Relations activities in South & Southeast Asia. He has led tech and media ventures at small startups and software giants alike.\n\nEarly in his Google career, Sami helped lead the company’s market entry into South Asia’s emerging countries.  Prior to Google, Sami founded a Singapore-based tech company, launching a cloud-based marketing and business tool catered to retailers and consumers in the region.  Sami was a Product Manager in the software and music industries, and has co-produced media productions in Asia, Europe, Africa, and the Middle East, including a TV & web series designed to showcase entrepreneurship talent in emerging markets.  Sami majored in Management Information Systems at McGill University and received an MBA from INSEAD where he focused on Entrepreneurship and Strategy.",
+    "image": "/static/images/speakers/sami-kizilbash.png"
+  },
+
+  {
+    "name": "Bok Thye Yeow",
+    "position": "Developer Relations Ecosystem Program Manager",
+    "company": "Google",
+    "bio": "Bok Thye Yeow is a Google Developer Relations Program Manager and has more than a decade of experience developing full stack software solutions across various industries including telco, banking, digital and creative advertising, retail, etc. During his free time, he likes to experiment with new technology or take his road bike out for a spin. He strongly believes we are only starting to scratch the surface of what's possible with technology in this era and is looking forward to the \"next big thing\" to come!",
+    "image": "/static/images/speakers/bok-thye-yeow.png"
+  },
+
+  {
+    "name": "Erica Hanson",
+    "position": "Developer Relations Ecosystem Program Manager",
+    "company": "Google",
+    "bio": "Erica Hanson has been at Google for over 10 years and worked across different areas of the business (sales, operations, and engineering) and across different countries and Google offices (Mountain View, San Francisco, London, and Singapore).\n\nErica now works on the Developer Relations team based in the Google Singapore office. She is the Developer Relations country lead for Indonesia and is focused on helping startups and developers be more succussful. She is also managing the Google Business Groups (GBGs) global program, which is focused on helping entrepreneurs be more successful using Google technologies through communites.\n\nErica co-founded Geek Girl Meetup in Singapore, a community for women in tech.",
+    "image": "/static/images/speakers/erica-hanson.png"
+  }
+]
