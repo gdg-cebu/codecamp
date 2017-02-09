@@ -152,6 +152,12 @@ body {
 
 /** Schedule Section **/
 
+.schedule {
+  max-width: 70rem;
+  margin: 0 auto;
+}
+
+
 .event {
   margin: 5rem 0;
 }
@@ -177,7 +183,7 @@ body {
 
 
 .event-speaker-avatar {
-  width: 100%;
+  width: 60%;
   border-radius: 50%;
 }
 
@@ -193,7 +199,8 @@ body {
   width: 5rem;
   height: 5rem;
   margin: 0 auto 1.6rem auto;
-  font-size: 0.9em;
+  font-size: 0.75em;
+  font-weight: bold;
   text-align: center;
   line-height: 5rem;
   background-color: #ddd;
@@ -252,26 +259,6 @@ body {
   }
 
 
-  .event-time::before,
-  .event-time::after {
-    content: "";
-    width: 2.5rem;
-    height: 2px;
-    position: absolute;
-    top: calc(50% - 1px);
-    background-color: #ddd;
-  }
-
-  .event-time::before {
-    right: 100%;
-  }
-
-  .event-time::after {
-    width: 1.5rem;
-    left: 100%;
-  }
-
-
   .event-title {
     text-align: left;
   }
@@ -286,14 +273,5 @@ body {
 
   .event-time {
     margin: 0 4rem;
-  }
-
-
-  .event-time::before {
-    width: 4rem;
-  }
-
-  .event-time::after {
-    width: 3rem;
   }
 }
