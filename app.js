@@ -17,11 +17,15 @@ app.use(favicon(path.join(__dirname, 'static', 'images', 'favicon.ico')));
 app.use('/static', express.static(path.join(__dirname, 'static')));
 
 app.get('/', (req, res) => {
-  getSpeakers().then(speakers => {
+  Promise.all([
+    readData(path.join(__dirname, 'data', 'speakers.json')),
+    readData(path.join(__dirname, 'data', 'schedule.json'))
+  ]).then(data => {
     const context = {
       eventMapUrl: getStaticMapUrl(),
-      speakers: speakers
-    };
+      speakers: data[0],
+      events: data[1]
+    }
     res.render('index.html', context);
   });
 });
@@ -44,15 +48,14 @@ function getStaticMapUrl() {
 }
 
 
-function getSpeakers() {
+function readData(path) {
   return new Promise((resolve, reject) => {
-    const speakersPath = path.join(__dirname, 'data', 'speakers.json');
-    fs.readFile(speakersPath, 'utf8', (err, body) => {
+    fs.readFile(path, 'utf8', (err, body) => {
       if (err) {
         return reject(err);
       }
       resolve(JSON.parse(body));
-    })
+    });
   });
 }
 

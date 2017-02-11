@@ -1,0 +1,47 @@
+[
+  {
+    "title": "Introduction to Progressive Web Apps",
+    "time": "10:00",
+    "speaker": {
+      "name": "Arnelle Balane",
+      "image": "/static/images/speakers/arnellebalane.jpg"
+    },
+    "summary": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, explicabo nemo aperiam minus officiis, a sunt dolorum vero iusto, tenetur suscipit commodi iure inventore. Placeat similique illum quod culpa earum."
+  },
+  {
+    "title": "Introduction to Progressive Web Apps",
+    "time": "10:00",
+    "speaker": {
+      "name": "Arnelle Balane",
+      "image": "/static/images/speakers/arnellebalane.jpg"
+    },
+    "summary": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, explicabo nemo aperiam minus officiis, a sunt dolorum vero iusto, tenetur suscipit commodi iure inventore. Placeat similique illum quod culpa earum."
+  },
+  {
+    "title": "Introduction to Progressive Web Apps",
+    "time": "10:00",
+    "speaker": {
+      "name": "Arnelle Balane",
+      "image": "/static/images/speakers/arnellebalane.jpg"
+    },
+    "summary": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, explicabo nemo aperiam minus officiis, a sunt dolorum vero iusto, tenetur suscipit commodi iure inventore. Placeat similique illum quod culpa earum."
+  },
+  {
+    "title": "Introduction to Progressive Web Apps",
+    "time": "10:00",
+    "speaker": {
+      "name": "Arnelle Balane",
+      "image": "/static/images/speakers/arnellebalane.jpg"
+    },
+    "summary": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, explicabo nemo aperiam minus officiis, a sunt dolorum vero iusto, tenetur suscipit commodi iure inventore. Placeat similique illum quod culpa earum."
+  },
+  {
+    "title": "Introduction to Progressive Web Apps",
+    "time": "10:00",
+    "speaker": {
+      "name": "Arnelle Balane",
+      "image": "/static/images/speakers/arnellebalane.jpg"
+    },
+    "summary": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, explicabo nemo aperiam minus officiis, a sunt dolorum vero iusto, tenetur suscipit commodi iure inventore. Placeat similique illum quod culpa earum."
+  }
+]

@@ -59,39 +59,19 @@
         <h1 class="section-title">Schedule</h1>
 
         <div class="schedule">
-          <article class="event">
-            <header class="event-speaker" data-speaker="Arnelle Balane">
-              <img class="event-speaker-avatar" src="/static/images/speakers/arnellebalane.jpg" alt="Arnelle Balane">
-              <h1 class="event-speaker-name">Arnelle Balane</h1>
-            </header>
-            <time class="event-time" datetime="now">10:00</time>
-            <main class="event-details">
-              <h1 class="event-title">Introduction to Progressive Web Apps</h1>
-              <p class="event-summary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, explicabo nemo aperiam minus officiis, a sunt dolorum vero iusto, tenetur suscipit commodi iure inventore. Placeat similique illum quod culpa earum.</p>
-            </main>
-          </article>
-          <article class="event">
-            <header class="event-speaker" data-speaker="Arnelle Balane">
-              <img class="event-speaker-avatar" src="/static/images/speakers/arnellebalane.jpg" alt="Arnelle Balane">
-              <h1 class="event-speaker-name">Arnelle Balane</h1>
-            </header>
-            <time class="event-time" datetime="now">10:00</time>
-            <main class="event-details">
-              <h1 class="event-title">Introduction to Progressive Web Apps</h1>
-              <p class="event-summary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, explicabo nemo aperiam minus officiis, a sunt dolorum vero iusto, tenetur suscipit commodi iure inventore. Placeat similique illum quod culpa earum.</p>
-            </main>
-          </article>
-          <article class="event">
-            <header class="event-speaker" data-speaker="Arnelle Balane">
-              <img class="event-speaker-avatar" src="/static/images/speakers/arnellebalane.jpg" alt="Arnelle Balane">
-              <h1 class="event-speaker-name">Arnelle Balane</h1>
-            </header>
-            <time class="event-time" datetime="now">10:00</time>
-            <main class="event-details">
-              <h1 class="event-title">Introduction to Progressive Web Apps</h1>
-              <p class="event-summary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, explicabo nemo aperiam minus officiis, a sunt dolorum vero iusto, tenetur suscipit commodi iure inventore. Placeat similique illum quod culpa earum.</p>
-            </main>
-          </article>
+          {% for event in events %}
+            <article class="event">
+              <header class="event-speaker" data-speaker="{{ event.speaker.name }}">
+                <img class="event-speaker-avatar" src="{{ event.speaker.image }}" alt="{{ event.speaker.name }}">
+                <h1 class="event-speaker-name">{{ event.speaker.name }}</h1>
+              </header>
+              <time class="event-time" datetime="now">{{ event.time }}</time>
+              <main class="event-details">
+                <h1 class="event-title">{{ event.title }}</h1>
+                <p class="event-summary">{{ event.summary }}</p>
+              </main>
+            </article>
+          {% endfor %}
         </div>
       </div>
     </section>
