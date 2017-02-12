@@ -40,8 +40,11 @@
       <div class="wrapper">
         <h1 class="section-title">Speakers</h1>
 
-        <div class="speakers">
-          {% for speaker in speakers %}
+        <div class="carousel">
+          <button class="carousel-button prev"></button>
+          <button class="carousel-button next"></button>
+          <div class="speakers">
+            {% for speaker in speakers %}
             <article class="speaker">
               <img class="speaker-avatar" src="{{ speaker.image }}" alt="{{ speaker.name }}">
               <div class="speaker-details">
@@ -49,7 +52,8 @@
                 <h2 class="speaker-company">{{ speaker.position }}, {{ speaker.company }}</h2>
               </div>
             </article>
-          {% endfor %}
+            {% endfor %}
+          </div>
         </div>
       </div>
     </section>
@@ -75,5 +79,7 @@
         </div>
       </div>
     </section>
+
+    <script src="/static/javascripts/main.js"></script>
   </body>
 </html>

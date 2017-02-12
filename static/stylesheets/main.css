@@ -157,6 +157,76 @@ body {
 
 
 
+/** Speakers Carousel **/
+
+.carousel {
+  position: relative;
+}
+
+
+.carousel-active .speakers {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: hidden;
+}
+
+
+.carousel-active .speaker {
+  flex-shrink: 0;
+  width: 80vw;
+}
+
+
+.carousel-button {
+  display: none;
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+  top: calc(50% - 1.5rem);
+  z-index: 1;
+  border-radius: 50%;
+}
+
+.carousel-button.prev {
+  left: -1.5rem;
+}
+
+.carousel-button.next {
+  right: -1.5rem;
+}
+
+
+.carousel-active .carousel-button {
+  display: block;
+}
+
+
+@media all and (min-width: 500px), (min-device-width: 500px) {
+  .carousel-active .speaker {
+    width: calc((100% - 4rem) / 2);
+    margin: 1rem;
+  }
+
+
+  .carousel-button.prev {
+    left: -3rem;
+  }
+
+  .carousel-button.next {
+    right: -3rem;
+  }
+}
+
+
+@media all and (min-width: 800px), (min-device-width: 800px) {
+  .carousel-active .speaker {
+    width: calc((100% - 12rem) / 3);
+    margin: 2rem;
+  }
+}
+
+
+
 /** Schedule Section **/
 
 .schedule {
