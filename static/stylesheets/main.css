@@ -179,20 +179,43 @@ body {
 
 .carousel-button {
   display: none;
-  width: 3rem;
-  height: 3rem;
+  width: 5rem;
+  height: 5rem;
+  border: none;
   position: absolute;
-  top: calc(50% - 1.5rem);
+  top: calc(50% - 2rem);
   z-index: 1;
+  background-color: #e5e5e5;
   border-radius: 50%;
+  cursor: pointer;
 }
 
 .carousel-button.prev {
-  left: -1.5rem;
+  left: -2rem;
 }
 
 .carousel-button.next {
-  right: -1.5rem;
+  right: -2rem;
+}
+
+
+.carousel-button::before {
+  content: "";
+  position: absolute;
+  top: calc(50% - 0.8rem);
+  left: calc(50% - 0.8rem);
+  width: 1.6rem;
+  height: 1.6rem;
+  border-top: 3px solid #aaa;
+  border-left: 3px solid #aaa;
+}
+
+.carousel-button.prev::before {
+  transform: translateX(4px) rotate(-45deg);
+}
+
+.carousel-button.next::before {
+  transform: translateX(-4px) rotate(135deg);
 }
 
 
@@ -209,11 +232,11 @@ body {
 
 
   .carousel-button.prev {
-    left: -3rem;
+    left: -4rem;
   }
 
   .carousel-button.next {
-    right: -3rem;
+    right: -4rem;
   }
 }
 
