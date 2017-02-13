@@ -30,6 +30,8 @@ app.get('/', (req, res) => {
   });
 });
 
+app.get('/faqs', (req, res) => res.render('faqs.html'));
+
 
 function getStaticMapUrl() {
   const baseUrl = 'https://maps.googleapis.com/maps/api/staticmap';
