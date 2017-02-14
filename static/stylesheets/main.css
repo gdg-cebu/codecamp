@@ -18,6 +18,11 @@ body {
 }
 
 
+a {
+  color: #388e32;
+}
+
+
 
 /** Layouts **/
 
@@ -32,9 +37,44 @@ body {
 
 
 
+/** Site Header **/
+
+#site-header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  background-color: #fff;
+}
+
+
+#site-logo {
+  display: block;
+  width: 7rem;
+}
+
+
+#site-logo img {
+  display: block;
+  width: 100%;
+}
+
+
+.nav-link {
+  margin: 0 1rem;
+  text-decoration: none;
+}
+
+
+
 /** Sections **/
 
-.page-section:nth-child(odd) {
+.page-section:nth-of-type(odd) {
   background-color: #f5f5f5;
 }
 
