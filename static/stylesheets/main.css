@@ -319,7 +319,7 @@ a {
 
 
 .speaker-name {
-  margin: 0;
+  margin: 0 0 0.25em 0;
   font-size: 1em;
 }
 
@@ -328,6 +328,7 @@ a {
   margin: 0;
   font-size: 1em;
   font-weight: normal;
+  line-height: 1;
   opacity: 0.5;
 }
 
@@ -489,6 +490,7 @@ a {
 .event-speaker-name {
   margin: 0.5em 0;
   font-size: 1.4rem;
+  line-height: 1;
 }
 
 
