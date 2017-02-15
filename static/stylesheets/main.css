@@ -260,11 +260,6 @@ a {
 }
 
 
-.page-section:nth-of-type(odd) {
-  background-color: #f5f5f5;
-}
-
-
 .section-title {
   margin: 1.75em 0;
   font-family: "Quicksand", sans-serif;
@@ -356,6 +351,12 @@ a {
 
 /** Speakers Section **/
 
+#speakers {
+  color: #fff;
+  background-color: #388e32;
+}
+
+
 .speakers {
   max-width: 90rem;
   margin: 0 auto;
@@ -365,7 +366,6 @@ a {
 .speaker {
   margin: 2rem 0;
   text-align: center;
-  background-color: #eee;
   border-radius: 5px;
   overflow: hidden;
 }
@@ -392,7 +392,7 @@ a {
   font-size: 1em;
   font-weight: normal;
   line-height: 1;
-  opacity: 0.5;
+  opacity: 0.75;
 }
 
 
@@ -436,6 +436,7 @@ a {
 .carousel-active .speaker {
   flex-shrink: 0;
   width: 80vw;
+  transition: transform 250ms ease;
 }
 
 
@@ -514,6 +515,11 @@ a {
 
 /** Schedule Section **/
 
+#schedule {
+  background-image: linear-gradient(45deg, rgba(0, 150, 136, 0.25), rgba(233, 30, 99, 0.15), rgba(139, 195, 74, 0.15));
+}
+
+
 .schedule {
   max-width: 70rem;
   margin: 0 auto;
@@ -566,7 +572,8 @@ a {
   font-weight: bold;
   text-align: center;
   line-height: 5rem;
-  background-color: #ddd;
+  color: #fff;
+  background-color: #388e32;
   border-radius: 50%;
 }
 
@@ -593,7 +600,7 @@ a {
     height: calc(50% + 2.5rem);
     position: absolute;
     left: calc(15rem - 1px);
-    background-color: #ddd;
+    background-color: #388e32;
   }
 
   .event::before {
