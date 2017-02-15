@@ -14,6 +14,7 @@ body {
   margin: 0;
   font-family: "Droid Sans", sans-serif;
   font-size: 1.6rem;
+  line-height: 1.35em;
   color: #333;
 }
 
@@ -579,4 +580,23 @@ a {
 
 .rules li {
   margin: 1em 0;
+}
+
+
+
+/** FAQs Page **/
+
+.faqs {
+  padding: 0;
+  list-style: none;
+}
+
+
+.faq {
+  margin: 5rem 0;
+}
+
+
+.faq h4 {
+  margin: 0;
 }

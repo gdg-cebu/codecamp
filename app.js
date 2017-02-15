@@ -30,7 +30,13 @@ app.get('/', (req, res) => {
   });
 });
 
-app.get('/faqs', (req, res) => res.render('faqs.html'));
+app.get('/faqs', (req, res) => {
+  readData(path.join(__dirname, 'data', 'faqs.json')).then(faqs => {
+    const context = { faqs };
+    res.render('faqs.html', context)
+  });
+});
+
 app.get('/coc', (req, res) => res.render('coc.html'));
 
 
