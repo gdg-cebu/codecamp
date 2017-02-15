@@ -1,3 +1,24 @@
+// Site Header Behavior
+(function() {
+  var navbar = $('.nav');
+  var toggle = $('#nav-toggle');
+
+  window.addEventListener('hashchange', closeNavbar);
+
+  navbar.addEventListener('click', function(e) {
+    var pattern = new RegExp(window.location.hash + '$');
+    if (pattern.test(e.target.href)) {
+      closeNavbar();
+    }
+  });
+
+  function closeNavbar() {
+    toggle.checked = false;
+  }
+})();
+
+
+// Speaker Section Carousel
 (function() {
   var carousel = $('.carousel');
   carousel.classList.add('carousel-active');
@@ -55,14 +76,14 @@
     maxIndex = speakers.length - itemsPerSlide;
     index = Math.min(index, maxIndex);
   }
-
-
-  function $(selector, context) {
-    return (context || document).querySelector(selector);
-  }
-
-
-  function $$(selector, context) {
-    return (context || document).querySelectorAll(selector);
-  }
 })();
+
+
+function $(selector, context) {
+  return (context || document).querySelector(selector);
+}
+
+
+function $$(selector, context) {
+  return (context || document).querySelectorAll(selector);
+}
