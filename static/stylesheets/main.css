@@ -77,7 +77,39 @@ a {
   width: 2.4rem;
   height: 2.4rem;
   margin-right: 5vw;
-  background-color: red;
+  position: relative;
+}
+
+
+.nav-toggle::before,
+.nav-toggle::after {
+  content: "";
+  position: absolute;
+  left: 10%;
+  width: 80%;
+  height: 4px;
+  background-color: #555;
+  transform-origin: center center;
+  transition: all ease 250ms;
+}
+
+.nav-toggle::before {
+  top: calc(50% - 5px);
+}
+
+.nav-toggle::after {
+  bottom: calc(50% - 5px);
+}
+
+
+#nav-toggle:checked ~ .nav-toggle::before {
+  top: calc(50% - 2px);
+  transform: rotate(45deg);
+}
+
+#nav-toggle:checked ~ .nav-toggle::after {
+  bottom: calc(50% - 2px);
+  transform: rotate(-45deg);
 }
 
 
@@ -103,7 +135,7 @@ a {
 .nav::before {
   content: "";
   position: absolute;
-  top: -0.6rem;
+  top: -0.7rem;
   right: calc(5vw + 1rem + 0.6rem);
   width: 1.2rem;
   height: 1.2rem;
