@@ -164,6 +164,8 @@ a {
 .nav-link {
   display: block;
   padding: 0.25em calc(5vw + 1rem);
+  font-size: 0.85em;
+  text-transform: uppercase;
   text-decoration: none;
 }
 
@@ -212,7 +214,40 @@ a {
     display: inline;
     padding: 0;
     margin: 0 0.75rem;
+    position: relative;
     text-decoration: none;
+  }
+
+
+  .nav-link::before,
+  .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    width: 0;
+    height: 1px;
+    background-color: currentColor;
+    opacity: 0.75;
+    transform: translateX(-50%);
+    transition: all 150ms ease;
+  }
+
+  .nav-link::before {
+    bottom: -3px;
+  }
+
+  .nav-link::after {
+    bottom: -5px;
+  }
+
+  .nav-link:hover::before,
+  .nav-link:focus::before {
+    width: 70%;
+  }
+
+  .nav-link:hover::after,
+  .nav-link:focus::after {
+    width: 50%;
   }
 }
 
@@ -257,6 +292,7 @@ a {
   align-items: center;
   min-height: 100vh;
   padding-bottom: 6rem;
+  background-image: linear-gradient(45deg, rgba(0, 150, 136, 0.25), rgba(139, 195, 74, 0.15), rgba(63, 81, 181, 0.35));
 }
 
 
