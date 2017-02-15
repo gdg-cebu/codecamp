@@ -252,15 +252,41 @@ a {
 
 #landing {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  padding-bottom: 6rem;
 }
 
 
 #landing .event-logo {
   width: 70vmin;
   max-width: 36rem;
+}
+
+
+.register-btn {
+  padding: 1em 4em;
+  margin-top: 5rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 0.9em;
+  font-weight: bold;
+  color: #fff;
+  background-color: #388e32;
+}
+
+.register-btn:hover,
+.register-btn:focus {
+  background-color: #3c9835;
+}
+
+
+@media all and (min-width: 600px), (min-device-width: 600px) {
+  #landing {
+    padding-bottom: 7.5rem;
+  }
 }
 
 
