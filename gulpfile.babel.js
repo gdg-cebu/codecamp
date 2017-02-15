@@ -32,4 +32,13 @@ gulp.task('buildjs', _ => {
 });
 
 
-gulp.task('default', ['buildcss', 'buildjs']);
+gulp.task('build', ['buildcss', 'buildjs']);
+
+
+gulp.task('watch', _ => {
+  gulp.watch(paths.stylesheets, ['buildcss']);
+  gulp.watch(paths.javascripts, ['buildjs']);
+});
+
+
+gulp.task('default', ['buildcss', 'buildjs', 'watch']);
