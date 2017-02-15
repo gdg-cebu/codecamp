@@ -683,6 +683,7 @@ a {
 /** Site Footer **/
 
 #site-footer {
+  border-top: 1px solid #ddd;
   background-color: #fff;
 }
 
@@ -691,6 +692,7 @@ a {
   display: block;
   text-align: center;
   line-height: 1;
+  opacity: 0.78;
 }
 
 
@@ -713,8 +715,18 @@ a {
 
 
 .footer-section a {
+  font-size: 0.9em;
+}
+
+
+.footer-section a {
   display: block;
   text-decoration: none;
+}
+
+.footer-section a:hover,
+.footer-section a:focus {
+  text-decoration: underline;
 }
 
 
