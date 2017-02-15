@@ -31,6 +31,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/faqs', (req, res) => res.render('faqs.html'));
+app.get('/coc', (req, res) => res.render('coc.html'));
 
 
 function getStaticMapUrl() {

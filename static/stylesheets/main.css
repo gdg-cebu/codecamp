@@ -36,6 +36,19 @@ a {
 }
 
 
+.inner-wrapper {
+  width: 100%;
+  margin: auto;
+}
+
+
+@media all and (min-width: 500px), (min-device-width: 500px) {
+  .inner-wrapper {
+    width: 80%;
+  }
+}
+
+
 
 /** Site Header **/
 
@@ -558,4 +571,12 @@ a {
   .event-time {
     margin: 0 4rem;
   }
+}
+
+
+
+/** Code of Conduct Page **/
+
+.rules li {
+  margin: 1em 0;
 }
