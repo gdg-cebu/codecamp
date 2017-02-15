@@ -1,9 +1,13 @@
 // Site Header Behavior
 (function() {
+  // navbar toggle behavior on mobile
   var navbar = $('.nav');
   var toggle = $('#nav-toggle');
 
-  window.addEventListener('hashchange', closeNavbar);
+  window.addEventListener('hashchange', function() {
+    closeNavbar();
+    setTimeout(showHeader, 25);
+  });
 
   navbar.addEventListener('click', function(e) {
     var pattern = new RegExp(window.location.hash + '$');
@@ -14,6 +18,54 @@
 
   function closeNavbar() {
     toggle.checked = false;
+  }
+
+
+  // auto-hiding navbar behavior
+  var header = $('#site-header');
+  var headerTop = 0;
+  var headerHeight = header.getBoundingClientRect().height;
+  var previous = (document.scrollingElement || document.body).scrollTop;
+
+  if (isMobile()) {
+    window.addEventListener('scroll', function(e) {
+      var top = (document.scrollingElement || document.body).scrollTop;
+      var direction = previous < top ? 'down' : 'up';
+      var difference = top - previous;
+
+      if (direction === 'down' && !toggle.checked) {
+        headerTop = Math.max(headerTop - difference, -headerHeight);
+      } else if (direction === 'up') {
+        headerTop = Math.min(headerTop - difference, 0);
+      }
+
+      header.style.top = headerTop + 'px';
+      previous = top;
+    });
+
+    window.addEventListener('resize', function() {
+      headerHeight = header.getBoundingClientRect().height;
+    });
+
+    header.addEventListener('click', showHeader);
+  }
+
+  function showHeader() {
+    headerTop = 0;
+    header.style.transition = 'top 100ms ease';
+    header.style.top = headerTop + 'px';
+    setTimeout(function() {
+      header.style.transition = '';
+    }, 100);
+  }
+
+  function isMobile() {
+    try {
+      document.createEvent('TouchEvent');
+      return true;
+    } catch (e) {
+      return false;
+    }
   }
 })();
 
