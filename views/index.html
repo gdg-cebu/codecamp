@@ -58,13 +58,17 @@
         {% for event in events %}
           <article class="event">
             <header class="event-speaker" data-speaker="{{ event.speaker.name }}">
-              <img class="event-speaker-avatar" src="{{ event.speaker.image }}" alt="{{ event.speaker.name }}">
-              <h1 class="event-speaker-name">{{ event.speaker.name }}</h1>
+              {% if event.speaker %}
+                <img class="event-speaker-avatar" src="{{ event.speaker.image }}" alt="{{ event.speaker.name }}">
+                <h1 class="event-speaker-name">{{ event.speaker.name }}</h1>
+              {% endif %}
             </header>
             <time class="event-time" datetime="now">{{ event.time }}</time>
             <main class="event-details">
               <h1 class="event-title">{{ event.title }}</h1>
-              <p class="event-summary">{{ event.summary }}</p>
+              {% if event.summary %}
+                <p class="event-summary">{{ event.summary|safe }}</p>
+              {% endif %}
             </main>
           </article>
         {% endfor %}

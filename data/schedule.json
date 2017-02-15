@@ -1,47 +1,112 @@
 [
   {
-    "title": "Introduction to Progressive Web Apps",
-    "time": "10:00",
-    "speaker": {
-      "name": "Arnelle Balane",
-      "image": "/static/images/speakers/arnellebalane.jpg"
-    },
-    "summary": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, explicabo nemo aperiam minus officiis, a sunt dolorum vero iusto, tenetur suscipit commodi iure inventore. Placeat similique illum quod culpa earum."
+    "title": "Registration",
+    "time": "07:00",
+    "summary": "Registration will be done outside the hall. Everyone is encouraged to come early for the registration."
   },
   {
-    "title": "Introduction to Progressive Web Apps",
-    "time": "10:00",
-    "speaker": {
-      "name": "Arnelle Balane",
-      "image": "/static/images/speakers/arnellebalane.jpg"
-    },
-    "summary": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, explicabo nemo aperiam minus officiis, a sunt dolorum vero iusto, tenetur suscipit commodi iure inventore. Placeat similique illum quod culpa earum."
+    "title": "Philippine National Anthem",
+    "time": "08:45"
   },
   {
-    "title": "Introduction to Progressive Web Apps",
-    "time": "10:00",
+    "title": "Opening Remarks",
+    "time": "08:50",
     "speaker": {
-      "name": "Arnelle Balane",
-      "image": "/static/images/speakers/arnellebalane.jpg"
-    },
-    "summary": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, explicabo nemo aperiam minus officiis, a sunt dolorum vero iusto, tenetur suscipit commodi iure inventore. Placeat similique illum quod culpa earum."
+      "name": "Shad Roi de la Cruz",
+      "image": "/static/images/speakers/shad-roi.jpg"
+    }
   },
   {
-    "title": "Introduction to Progressive Web Apps",
-    "time": "10:00",
+    "title": "Jumpstarting Machine Learning & TensorFlow",
+    "time": "09:15",
     "speaker": {
-      "name": "Arnelle Balane",
-      "image": "/static/images/speakers/arnellebalane.jpg"
+      "name": "Soonson Kwon",
+      "image": "/static/images/speakers/soonson-kwon.png"
     },
-    "summary": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, explicabo nemo aperiam minus officiis, a sunt dolorum vero iusto, tenetur suscipit commodi iure inventore. Placeat similique illum quod culpa earum."
+    "summary": "Soonson is the Head of DevRel APAC Ecosystem and Korea Regional Lead working on building strong ecosystem for developers."
   },
   {
-    "title": "Introduction to Progressive Web Apps",
-    "time": "10:00",
+    "title": "Material Design - Tools, Framework and Design Concept",
+    "time": "09:50",
     "speaker": {
-      "name": "Arnelle Balane",
-      "image": "/static/images/speakers/arnellebalane.jpg"
+      "name": "Takuo Suzuki",
+      "image": "/static/images/speakers/takuo-suzuki.png"
     },
-    "summary": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, explicabo nemo aperiam minus officiis, a sunt dolorum vero iusto, tenetur suscipit commodi iure inventore. Placeat similique illum quod culpa earum."
+    "summary": "Takuo is the lead of the Developer Relations team in Japan, Taiwan and ANZ. He has a keen focus on Android's Material Design. He further engages in UX reviews of apps and further facilitates various design sprints."
+  },
+  {
+    "title": "Build, Grow and Earn with Firebase for Mobile Applications",
+    "time": "10:25",
+    "speaker": {
+      "name": "Manikanta Krishnamurthy",
+      "image": "/static/images/speakers/manikanta-krishnamurthy.png"
+    },
+    "summary": "Mani comes with a strong background of Mobile Development in Apps & games, across a broad range of mobile platforms starting from the earliest Symbian phones."
+  },
+  {
+    "title": "Designing Scalable Architecture with Cloud",
+    "time": "11:00",
+    "speaker": {
+      "name": "Junho Choi",
+      "image": "/static/images/speakers/junho-choi.png"
+    },
+    "summary": "Chief Architect/Co-founder of Neumob at Sunnyvale, CA. Worked on developing, deploying and performance optimization of mobile app acceleration, application/web acceleration and content delivery network more than 15 years."
+  },
+  {
+    "title": "Give out certificates for morning speakers",
+    "time": "11:30"
+  },
+  {
+    "title": "Lunch Break",
+    "time": "11:45",
+    "summary": "Starup Lunch with Sami<br>Community Builder Lunch with Chelle and Adrian"
+  },
+  {
+    "title": "Say Hello to Tango and Daydream",
+    "time": "13:00",
+    "speaker": {
+      "name": "Sami Kizilbash",
+      "image": "/static/images/speakers/sami-kizilbash.png"
+    },
+    "summary": "Sami oversees Google’s Developer Relations activities in South & Southeast Asia.  He has led tech and media ventures at small startups and software giants alike."
+  },
+  {
+    "title": "The Modern Web - Why PWA and AMP Matters?",
+    "time": "13:35",
+    "speaker": {
+      "name": "Bok Thye Yeow",
+      "image": "/static/images/speakers/bok-thye-yeow.png"
+    },
+    "summary": "Bok Thye Yeow is a Google Developer Relations Program Manager and has more than a decade of experience developing full stack software solutions across various industries including telco, banking, digital and creative advertising, retail, etc."
+  },
+  {
+    "title": "Learning Android Development from a Personal Experience",
+    "time": "14:10",
+    "speaker": {
+      "name": "Erica Hanson",
+      "image": "/static/images/speakers/erica-hanson.png"
+    },
+    "summary": "Erica Hanson is the Developer Relations country lead for Indonesia and is focused on helping startups and developers be more succussful. She is also managing the Google Business Groups (GBGs) global program, which is focused on helping entrepreneurs be more successful using Google technologies through communites. She also co-founded Geek Girl Meetup in Singapore, a community for women in tech."
+  },
+  {
+    "title": "Q&A with the speakers",
+    "time": "14:40"
+  },
+  {
+    "title": "Closing Remarks",
+    "time": "15:10",
+    "speaker": {
+      "name": "Chelle Gray",
+      "image": "/static/images/speakers/chelle-gray.jpg"
+    }
+  },
+  {
+    "title": "Give out certificates for afternoon speakers",
+    "time": "15:20"
+  },
+  {
+    "title": "End of event",
+    "time": "15:30",
+    "summary": "Distribution of Shirts<br>Group Photo<br>Photobooths"
   }
 ]
