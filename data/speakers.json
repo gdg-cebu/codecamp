@@ -53,5 +53,12 @@
     "company": "Google",
     "bio": "Erica Hanson has been at Google for over 10 years and worked across different areas of the business (sales, operations, and engineering) and across different countries and Google offices (Mountain View, San Francisco, London, and Singapore).\n\nErica now works on the Developer Relations team based in the Google Singapore office. She is the Developer Relations country lead for Indonesia and is focused on helping startups and developers be more succussful. She is also managing the Google Business Groups (GBGs) global program, which is focused on helping entrepreneurs be more successful using Google technologies through communites.\n\nErica co-founded Geek Girl Meetup in Singapore, a community for women in tech.",
     "image": "/static/images/speakers/erica-hanson.png"
+  },
+
+  {
+    "name": "Chelle Gray",
+    "position": "Community Manager, APAC Developer Ecosystem Team",
+    "company": "Google",
+    "image": "/static/images/speakers/chelle-gray.jpg"
   }
 ]

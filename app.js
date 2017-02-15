@@ -23,7 +23,7 @@ app.get('/', (req, res) => {
   ]).then(data => {
     const context = {
       eventMapUrl: getStaticMapUrl(),
-      speakers: data[0],
+      speakers: data[0].sort(_ => Math.random() - 0.5),
       events: data[1]
     }
     res.render('index.html', context);
