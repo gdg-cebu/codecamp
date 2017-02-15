@@ -40,10 +40,10 @@ a {
 /** Site Header **/
 
 #site-header {
+  padding: 1rem;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  padding: 1rem 0;
   position: fixed;
   top: 0;
   left: 0;
@@ -55,7 +55,8 @@ a {
 
 #site-logo {
   display: block;
-  width: 7rem;
+  width: 5rem;
+  margin-left: 5vw;
 }
 
 
@@ -65,9 +66,106 @@ a {
 }
 
 
+#nav-toggle {
+  position: fixed;
+  top: -100vh;
+}
+
+
+.nav-toggle {
+  display: block;
+  width: 2.4rem;
+  height: 2.4rem;
+  margin-right: 5vw;
+  background-color: red;
+}
+
+
+.nav {
+  display: none;
+  width: 100%;
+  padding: 1rem 0;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  text-align: right;
+  background-color: #f3f3f3;
+}
+
+
+#nav-toggle:checked ~ .nav {
+  display: block;
+}
+
+
+.nav::before {
+  content: "";
+  position: absolute;
+  top: -0.6rem;
+  right: calc(5vw + 1rem + 0.6rem);
+  width: 1.2rem;
+  height: 1.2rem;
+  border-top: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  background-color: #f3f3f3;
+  transform: rotate(45deg);
+}
+
+
 .nav-link {
-  margin: 0 1rem;
+  display: block;
+  padding: 0.25em calc(5vw + 1rem);
   text-decoration: none;
+}
+
+
+@media all and (min-width: 600px), (min-device-width: 600px) {
+  #site-header {
+    justify-content: space-around;
+    padding: 1rem 0;
+  }
+
+
+  #site-logo {
+    width: 7rem;
+    margin: 0;
+  }
+
+
+  #site-logo img {
+    display: block;
+    width: 100%;
+  }
+
+
+  #nav-toggle,
+  .nav-toggle {
+    display: none;
+  }
+
+
+  .nav {
+    display: block;
+    width: auto;
+    border: none;
+    position: initial;
+    background-color: transparent;
+  }
+
+
+  .nav::before {
+    display: none;
+  }
+
+
+  .nav-link {
+    display: inline;
+    padding: 0;
+    margin: 0 0.75rem;
+    text-decoration: none;
+  }
 }
 
 
