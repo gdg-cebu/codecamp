@@ -602,3 +602,84 @@ a {
 .faq h4 {
   margin: 0;
 }
+
+
+
+/** Site Footer **/
+
+#site-footer {
+  background-color: #fff;
+}
+
+
+#site-footer small {
+  display: block;
+  text-align: center;
+  line-height: 1;
+}
+
+
+.gdg-logo {
+  display: block;
+  width: 3rem;
+  margin: 3rem auto;
+}
+
+
+.footer-section {
+  margin: 3rem 0;
+  text-align: center;
+}
+
+
+.footer-section h4 {
+  margin: 0.5em 0;
+}
+
+
+.footer-section a {
+  display: block;
+  text-decoration: none;
+}
+
+
+@media all and (min-width: 500px), (min-device-width: 500px) {
+  #site-footer small {
+    text-align: left;
+  }
+
+
+  .footer-sections {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+
+  .footer-section {
+    flex-shrink: 0;
+    width: 50%;
+    text-align: left;
+  }
+
+
+  .gdg-logo {
+    flex-shrink: 0;
+    height: auto;
+    margin: 3rem 40vw 0 40vw;
+  }
+}
+
+
+@media all and (min-width: 800px), (min-device-width: 800px) {
+  .footer-section {
+    width: auto;
+    margin-right: 10rem;
+  }
+
+
+  .gdg-logo {
+    order: 1;
+    margin: auto 0 auto auto;
+  }
+}
