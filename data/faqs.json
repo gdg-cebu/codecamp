@@ -48,6 +48,14 @@
     "answer": "We will not be providing transport service."
   },
   {
+    "question": "I am attending the event and I am not from Cebu. Will you help me look for a hotel where I can stay?",
+    "answer": "As of now, we cannot provide any hotel recommendations, but you can always use Google to look for places to stay that match your preferences and budget."
+  },
+  {
+    "question": "Will you provide some parking space for the attendees?",
+    "answer": "Yes. You can bring your car with you."
+  },
+  {
     "question": "On the event day, what time will the registration start?",
     "answer": "The registration will start at exactly 7:30 AM."
   },
@@ -61,19 +69,43 @@
   },
   {
     "question": "What should we bring on the event day?",
-    "answer": "Please do not forget to bring your ticket and a valid ID for verification. If you want to take notes, you may also bring a notebook or a pad paper. Laptops are also allowed.<br><br>For security purposes, please avoid bringing liquor, drugs, drug paraphernalia, bladed objects, daggers, knives, all sorts of deadly weapons, and other instruments deemed to be potentially lethal are strictly prohibited. Anyone caught in the possession of such objects will not be allowed to enter the venue and will be submitted to proper authorities."
+    "answer": "Please do not forget to bring your ticket and a valid ID/s for verification. If you want to take notes, you may also bring a notebook or a pad paper. Laptops are also allowed. For those who are from outside Cebu, you may also bring your plane ticket for verification just in case you will be late.<br><br>For security purposes, please avoid bringing liquor, drugs, drug paraphernalia, bladed objects, daggers, knives, all sorts of deadly weapons, and other instruments deemed to be potentially lethal are strictly prohibited. Anyone caught in the possession of such objects will not be allowed to enter the venue and will be submitted to proper authorities."
+  },
+  {
+    "question": "I am still a student and I have a class on that day. Will you provide excuse letters for students like me?",
+    "answer": "We will not be providing any excuse letters to our participants."
   },
   {
     "question": "What time will the event end?",
-    "answer": "The event will end by 4 PM."
+    "answer": "The event will end by 6 PM."
+  },
+  {
+    "question": "Will we code?",
+    "answer": "You will not code, but there will be demonstrations from our Googlers so you can observe."
   },
   {
     "question": "Will you provide free food?",
     "answer": "The organizers will be providing free food to the attendees."
   },
   {
+    "question": "Will there be internet access and power outlets for attendees during the event?",
+    "answer": "Internet access will be provided by our official partner with PLDT. When we talk about the latter, it is on a first come, first serve basis since the venue has limited number of power outlets."
+  },
+  {
+    "question": "Will there be meet and greet sessions with the speakers after the event?",
+    "answer": "We cannot guarantee that as of now, but just keep posted in our official Facebook page for any further announcements."
+  },
+  {
+    "question": "Can we have a copy of the presentation of the speakers?",
+    "answer": "It will really depend upon the speakers if they will share their presentations. Based on experience, some of our previous speakers; presentations can be found online."
+  },
+  {
     "question": "Will there be shirts?",
     "answer": "Just come and you will know."
+  },
+  {
+    "question": "I have prior commitments on that day. Will there be livestreaming?",
+    "answer": "We want to provide the best Google experience to our developers, whether they are present in the conference or not. Just keep posted in our official Facebook page for details."
   },
   {
     "question": "What are the event's official hashtag?",
@@ -86,5 +118,9 @@
   {
     "question": "I want to know more about the event, GDG Cebu, and its activities. Where should I go?",
     "answer": "You may check our social media channels:<br>Facebook page: <a href='https://www.facebook.com/gdgcebuorg'>https://www.facebook.com/gdgcebuorg</a><br>Facebook group: <a href='https://www.facebook.com/groups/gdgcebu/'>https://www.facebook.com/groups/gdgcebu/</a><br>Twitter: <a href='https://twitter.com/gdgcebu'>https://twitter.com/gdgcebu</a><br>Google plus: <a href='https://plus.google.com/+GdgcebuOrg'>https://plus.google.com/+GdgcebuOrg</a><br>Website: <a href='https://gdgcebu.org/'>https://gdgcebu.org/</a>"
+  },
+  {
+    "question": "If I have more questions, who should I contact?",
+    "answer": "You can always message us at our official Facebook page. We will be responding to your query as soon as we can."
   }
 ]
