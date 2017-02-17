@@ -15,7 +15,7 @@ app.set('views', path.join(__dirname, 'views'));
 app.use(morgan('dev'));
 app.use(favicon(path.join(__dirname, 'static', 'images', 'favicon.ico')));
 app.use('/static', express.static(path.join(__dirname, 'static')));
-app.use('/sw.js', express.static(path.join(__dirname, 'static', 'javascripts', 'sw.js')));
+app.use('/sw.js', express.static(path.join(__dirname, 'static', 'javascripts', 'sw.min.js')));
 
 app.get('/', (req, res) => {
   Promise.all([
