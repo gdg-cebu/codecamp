@@ -1,0 +1,16 @@
+{
+  "name": "GDG Cebu Code Camp 2017",
+  "short_name": "GDG Cebu Code Camp 2017",
+  "icons": [
+    {
+      "src": "/static/images/logo.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    }
+  ],
+  "theme_color": "#c0c6e4",
+  "background_color": "#ecf5e4",
+  "start_url": "/",
+  "orientation": "portrait",
+  "display": "standalone"
+}

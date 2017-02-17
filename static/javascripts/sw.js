@@ -3,6 +3,7 @@ const pathsToCache = [
   '/',
   '/faqs',
   '/coc',
+  "/static/manifest.json",
   '/static/stylesheets/fonts.min.css',
   '/static/stylesheets/main.min.css',
   '/static/javascripts/main.min.js',
