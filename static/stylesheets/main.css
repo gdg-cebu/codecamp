@@ -641,6 +641,49 @@ a {
 
 
 
+/** Sponsors Section **/
+
+.sponsors,
+.sponsors ul {
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+
+.sponsor-group {
+  margin: 8rem 0;
+}
+
+.sponsor-group:last-child {
+  margin-bottom: 0;
+}
+
+
+.group-name {
+  margin-bottom: 2em;
+  font-weight: normal;
+}
+
+
+.sponsor {
+  display: inline-block;
+  margin: 0 5rem;
+}
+
+
+.sponsor-logo {
+  max-width: 20rem;
+  max-height: 10rem;
+}
+
+
+.sponsor-name {
+  font-weight: normal;
+}
+
+
+
 /** Code of Conduct Page **/
 
 .rules li {

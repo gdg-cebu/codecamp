@@ -1,0 +1,31 @@
+[
+  {
+    "name": "Official Venue Partner",
+    "sponsors": [
+      {
+        "name": "IEC Convention Center Cebu",
+        "image": "/static/images/sponsors/iec.png"
+      }
+    ]
+  },
+
+  {
+    "name": "Official Media Partner",
+    "sponsors": [
+      {
+        "name": "PRWorks",
+        "image": "/static/images/sponsors/prworks.png"
+      }
+    ]
+  },
+
+  {
+    "name": "Official Telco Partner",
+    "sponsors": [
+      {
+        "name": "PLDT Innolab",
+        "image": "/static/images/sponsors/pldt-innolab.png"
+      }
+    ]
+  }
+]

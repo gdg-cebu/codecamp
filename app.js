@@ -19,12 +19,14 @@ app.use('/static', express.static(path.join(__dirname, 'static')));
 app.get('/', (req, res) => {
   Promise.all([
     readData(path.join(__dirname, 'data', 'speakers.json')),
-    readData(path.join(__dirname, 'data', 'schedule.json'))
+    readData(path.join(__dirname, 'data', 'schedule.json')),
+    readData(path.join(__dirname, 'data', 'sponsors.json'))
   ]).then(data => {
     const context = {
       eventMapUrl: getStaticMapUrl(),
       speakers: data[0].sort(_ => Math.random() - 0.5),
-      events: data[1]
+      events: data[1],
+      sponsors: data[2]
     }
     res.render('index.html', context);
   });
