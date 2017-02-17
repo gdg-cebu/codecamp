@@ -266,19 +266,6 @@ a {
 }
 
 
-.page-section:nth-of-type(2) ~ .page-section::before {
-  content: "";
-  width: 1.4rem;
-  height: 4rem;
-  position: absolute;
-  top: -2rem;
-  left: calc(50% - 0.7rem);
-  background: center center no-repeat;
-  background-image: url("../images/gdg-logo.png");
-  background-size: contain;
-}
-
-
 .section-title {
   margin: 1.75em 0;
   font-family: "Quicksand", sans-serif;
@@ -332,20 +319,8 @@ a {
 }
 
 
-@media all and (min-width: 600px), (min-device-width: 600px) {
-  #landing {
-    padding-bottom: 7.5rem;
-  }
-}
-
-
 
 /** About Section **/
-
-#about .wrapper {
-  padding-bottom: 0;
-}
-
 
 .venue-map {
   display: block;
