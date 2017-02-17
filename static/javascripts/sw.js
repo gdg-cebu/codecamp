@@ -9,6 +9,7 @@ const pathsToCache = [
   '/static/javascripts/main.min.js',
   '/static/javascripts/sw-register.js',
   '/static/images/logo.png',
+  '/static/images/logo-md.png',
   '/static/images/gdg-logo.png',
   '/static/images/speakers/bok-thye-yeow.png',
   '/static/images/speakers/chelle-gray.jpg',
