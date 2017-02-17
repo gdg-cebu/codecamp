@@ -9,7 +9,7 @@
   },
   {
     "question": "Is the event for free? Where can I register?",
-    "answer": "Yes, it is free! You can sign up and register at <a href='https://cebucodecamp.eventbrite.com' target='_blank'>https://cebucodecamp.eventbrite.com</a>."
+    "answer": "Yes, it is free! You can sign up and register at <a href='https://cebucodecamp.eventbrite.com' rel='noopener' target='_blank'>https://cebucodecamp.eventbrite.com</a>."
   },
   {
     "question": "Is the registration still ongoing?",
@@ -117,7 +117,7 @@
   },
   {
     "question": "I want to know more about the event, GDG Cebu, and its activities. Where should I go?",
-    "answer": "You may check our social media channels:<br>Facebook page: <a href='https://www.facebook.com/gdgcebuorg' target='_blank'>https://www.facebook.com/gdgcebuorg</a><br>Facebook group: <a href='https://www.facebook.com/groups/gdgcebu/' target='_blank'>https://www.facebook.com/groups/gdgcebu/</a><br>Twitter: <a href='https://twitter.com/gdgcebu' target='_blank'>https://twitter.com/gdgcebu</a><br>Google plus: <a href='https://plus.google.com/+GdgcebuOrg' target='_blank'>https://plus.google.com/+GdgcebuOrg</a><br>Website: <a href='https://gdgcebu.org/' target='_blank'>https://gdgcebu.org/</a>"
+    "answer": "You may check our social media channels:<br>Facebook page: <a href='https://www.facebook.com/gdgcebuorg' rel='noopener' target='_blank'>https://www.facebook.com/gdgcebuorg</a><br>Facebook group: <a href='https://www.facebook.com/groups/gdgcebu/' rel='noopener' target='_blank'>https://www.facebook.com/groups/gdgcebu/</a><br>Twitter: <a href='https://twitter.com/gdgcebu' rel='noopener' target='_blank'>https://twitter.com/gdgcebu</a><br>Google plus: <a href='https://plus.google.com/+GdgcebuOrg' rel='noopener' target='_blank'>https://plus.google.com/+GdgcebuOrg</a><br>Website: <a href='https://gdgcebu.org/' rel='noopener' target='_blank'>https://gdgcebu.org/</a>"
   },
   {
     "question": "If I have more questions, who should I contact?",
