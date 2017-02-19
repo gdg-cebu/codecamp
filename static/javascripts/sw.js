@@ -1,4 +1,4 @@
-const cacheName = 'codecamp-v1';
+const cacheName = 'codecamp-v1.1';
 const pathsToCache = [
   '/',
   '/faqs',
