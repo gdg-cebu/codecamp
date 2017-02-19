@@ -73,6 +73,9 @@
 // Speaker Section Carousel
 (function() {
   var carousel = $('.carousel');
+  if (!carousel) {
+    return;
+  }
   carousel.classList.add('carousel-active');
 
   var prevButton = $('.carousel-button.prev');
