@@ -1,4 +1,5 @@
 static/**/*.min.*
 node_modules/
+npm-debug.log
 config.json
 process.json
