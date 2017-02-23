@@ -2710,6 +2710,10 @@ supports-color@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/supports-color/-/supports-color-2.0.0.tgz#535d045ce6b6363fa40117084629995e9df324c7"
 
+sw-offline-google-analytics@^0.0.8:
+  version "0.0.8"
+  resolved "https://registry.yarnpkg.com/sw-offline-google-analytics/-/sw-offline-google-analytics-0.0.8.tgz#802d50d35a37ce483e7bc2811ecfc0e341b2393e"
+
 tar-pack@~3.3.0:
   version "3.3.0"
   resolved "https://registry.yarnpkg.com/tar-pack/-/tar-pack-3.3.0.tgz#30931816418f55afc4d21775afdd6720cee45dae"

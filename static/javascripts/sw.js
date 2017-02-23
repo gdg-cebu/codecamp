@@ -1,13 +1,18 @@
+importScripts('/offline-google-analytics/offline-google-analytics-import.js');
+goog.offlineGoogleAnalytics.initialize();
+
+
 const cacheName = 'codecamp-v1.3';
 const pathsToCache = [
   '/',
   '/faqs',
   '/coc',
-  "/static/manifest.json",
+  '/static/manifest.json',
   '/static/stylesheets/fonts.min.css',
   '/static/stylesheets/main.min.css',
   '/static/javascripts/main.min.js',
   '/static/javascripts/sw-register.min.js',
+  '/offline-google-analytics/offline-google-analytics-import.js',
   '/static/images/logo.png',
   '/static/images/logo-md.png',
   '/static/images/gdg-logo.png',
