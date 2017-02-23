@@ -7,7 +7,7 @@ const pathsToCache = [
   '/static/stylesheets/fonts.min.css',
   '/static/stylesheets/main.min.css',
   '/static/javascripts/main.min.js',
-  '/static/javascripts/sw-register.js',
+  '/static/javascripts/sw-register.min.js',
   '/static/images/logo.png',
   '/static/images/logo-md.png',
   '/static/images/gdg-logo.png',
