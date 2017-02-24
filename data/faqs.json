@@ -28,6 +28,26 @@
     "answer": "An email confirmation and a ticket for the event will be sent to you after you register. We will also be asking you to confirm your attendance a week before the event."
   },
   {
+    "question": "Can a company representative go  on my behalf?",
+    "answer": "The name that is shown on the ticket should coincide with the name in the proof of identification brought by the attendee."
+  },
+  {
+    "question": "I am a beginner developer. Is there a way for me to have a slot?",
+    "answer": "All you need to do is to support our event by donating Php 100 through Paypal. You can donate in our eventtbrite page."
+  },
+  {
+    "question": "What proof of identification should I bring in the event?",
+    "answer": "You can bring:<br>School ID<br>Company ID<br>LinkedIn account<br>Upwork account or any proof that you are working or have worked before<br>Photocopy or picture of Diploma or any proof that you already graduated in a higher education institution"
+  },
+  {
+    "question": "I did not receive any ticket or proof that I have a slot in the event. What should I do?",
+    "answer": "You can always check your spam folder from time to time."
+  },
+  {
+    "question": "Until what time is the registration open?",
+    "answer": "You can still register until February 24, 6 PM."
+  },
+  {
     "question": "I thought that registration is on a first come, first serve basis. How come you posted that you will be denying the entry of those 'Beginner Developers' who signed up using 'Experienced Developers' tickets?",
     "answer": "The registration is indeed on a first come first serve basis within the categories. If you signed up first under your category, you will get the slot first."
   },

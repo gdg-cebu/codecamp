@@ -2,7 +2,7 @@ importScripts('/offline-google-analytics/offline-google-analytics-import.js');
 goog.offlineGoogleAnalytics.initialize();
 
 
-const cacheName = 'codecamp-v1.3';
+const cacheName = 'codecamp-v1.4';
 const pathsToCache = [
   '/',
   '/faqs',
